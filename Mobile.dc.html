@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>QETUO — Голос у моря (мобильная)</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Permanent+Marker&amp;family=Caveat+Brush&amp;family=Ruslan+Display&amp;display=swap">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+.st{font-family:Oswald,sans-serif;font-weight:700;text-transform:uppercase}
+.sm{-webkit-mask-image:linear-gradient(#000 0 47%,transparent 47% 52%,#000 52%);mask-image:linear-gradient(#000 0 47%,transparent 47% 52%,#000 52%)}
+.tag{position:absolute;font-family:'Permanent Marker',cursive;color:#bdb8aa;opacity:.5;pointer-events:none;line-height:1}
+.rv{position:absolute;width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#97968f,#2b2b2a 70%);box-shadow:0 2px 3px #000}
+.pl{position:relative;background:linear-gradient(180deg,#232322,#191919);border:2px solid #0a0a0a;box-shadow:inset 0 0 30px rgba(0,0,0,.6),0 8px 20px rgba(0,0,0,.6)}
+.tw{filter:drop-shadow(0 8px 10px #000)}
+.torn{padding:8px;background:#b9b4a6;clip-path:polygon(0 3%,4% 0,9% 2%,15% 0,22% 3%,30% 1%,38% 3%,47% 0,55% 2%,63% 0,72% 3%,80% 1%,88% 3%,95% 0,100% 2%,99% 12%,100% 25%,98% 40%,100% 55%,99% 70%,100% 85%,98% 100%,92% 98%,85% 100%,76% 97%,68% 100%,58% 98%,49% 100%,40% 97%,31% 100%,22% 98%,14% 100%,7% 97%,0 100%,2% 85%,0 70%,2% 55%,0 40%,1% 25%,0 12%)}
+.torn img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.2) brightness(.72)}
+.tr{display:grid;grid-template-columns:40px 1fr auto;align-items:start;gap:10px;padding:16px 0;border-bottom:1px dashed #5a5a57}
+.tr b{font-family:Oswald,sans-serif;font-weight:500;font-size:28px;line-height:1;color:#c98269}
+.tr .nm{display:block;font-size:18px;font-weight:500;color:#e8e3d8}
+.tr .du{font-size:14px;color:#c4bfb3;padding-top:4px}
+.tr audio{display:block;width:100%;height:40px;margin-top:10px;filter:grayscale(1) invert(.9) contrast(.9)}
+.bt{min-height:52px;display:flex;align-items:center;justify-content:center;font-weight:500;letter-spacing:.15em;text-transform:uppercase;font-size:14px}
+</style>
+</helmet>
+<div style="position:relative;overflow:hidden;min-height:4400px;box-sizing:border-box;color:#a8a49b;font-family:'IBM Plex Mono',monospace;background-color:#111;background-image:radial-gradient(ellipse at 75% 12%,rgba(80,58,40,.28),transparent 40%),radial-gradient(ellipse at 15% 55%,rgba(60,50,40,.3),transparent 40%),linear-gradient(0deg,rgba(0,0,0,.7),transparent 12%),repeating-linear-gradient(115deg,rgba(255,255,255,.035) 0 1px,transparent 1px 9px),repeating-linear-gradient(0deg,rgba(0,0,0,.6) 0 2px,transparent 2px 260px)">
+<svg aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;opacity:.6;mix-blend-mode:overlay;pointer-events:none"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="4"></feTurbulence><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 1 0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#n)"></rect></svg>
+<div style="position:relative;padding:0 20px">
+<nav style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;border-bottom:3px double #3a3a3a">
+<a href="#" class="st" style="font-size:22px;letter-spacing:.15em;color:#e8e3d8">QETUO</a>
+<div style="display:flex;gap:14px"><a href="#tracks">Треки</a><a href="#frames">Кадры</a><a href="#map">Карта</a></div>
+</nav>
+<header style="position:relative;padding:36px 0 40px">
+<p class="st" style="margin:0 0 12px;font-size:16px;letter-spacing:.2em;color:#d49880">Зона 01 / Альбом 29.10</p>
+<h1 class="st sm" style="margin:0 0 28px;font-size:88px;line-height:.92;color:#c4bfb3">Голос<br>у моря</h1>
+<div class="tw" style="transform:rotate(1.2deg)"><div class="torn" style="aspect-ratio:7/9"><img src="./assets/6f6b555f038220d69529fc37a50610b2.jpg" alt="QETUO стоит спиной на скалах перед штормовым морем"></div></div>
+<p style="margin:28px 0 0;font-size:16px;line-height:1.7;color:#c4bfb3">Новый альбом QETUO. Релиз 29.10. Геленджик, Голубая бездна.</p>
+<span class="tag" style="font-size:84px;right:-6px;top:150px;transform:rotate(-9deg)">QETUO</span>
+</header>
+</div>
+<section style="position:relative;height:360px;overflow:hidden;border-top:3px double #3a3a3a;border-bottom:3px double #3a3a3a">
+<video src="./assets/ee78e86bc8a60068bc253a2bc6d6cb4c.mp4" autoplay="" muted="" loop="" playsinline="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.25) brightness(.5)"></video>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,10,10,.92),rgba(10,10,10,.35) 60%,transparent)"></div>
+<div style="position:absolute;left:20px;right:20px;bottom:20px">
+<div class="st" style="font-size:46px;line-height:1;color:#e8e3d8;text-shadow:0 3px 14px #000">Голос у моря</div>
+<div style="margin-top:14px;padding:12px 16px;background:rgba(10,10,10,.88);border:1px solid #8a867d"><div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#a8a49b;margin-bottom:4px">Локации</div><div class="st" style="font-weight:500;font-size:20px;line-height:1.3;letter-spacing:.1em;color:#e8e3d8">Геленджик / Голубая бездна</div></div>
+</div>
+</section>
+<div style="position:relative;padding:0 20px">
+<section id="tracks" style="padding:48px 0 36px">
+<div class="pl" style="padding:36px 18px 26px">
+<i class="rv" style="top:9px;left:9px"></i><i class="rv" style="top:9px;right:9px"></i><i class="rv" style="bottom:9px;left:9px"></i><i class="rv" style="bottom:9px;right:9px"></i>
+<h2 class="st" style="margin:0 0 8px;font-size:48px;letter-spacing:.04em;color:#e8e3d8">Треклист</h2>
+<p style="margin:0 0 18px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#c4bfb3">7 треков / 21:19</p>
+<div style="border-top:3px solid #8f4c3b">
+<div class="tr"><b>01</b><div><span class="nm">Игра теней</span><audio controls="" preload="none" aria-label="Игра теней" src="./assets/51f0a32feb874fbd0d2d5a5b6a4901e5.mp4"></audio></div><span class="du">3:54</span></div>
+<div class="tr"><b>02</b><div><span class="nm">Облака (phonk)</span><audio controls="" preload="none" aria-label="Облака (phonk)" src="./assets/cc18858a60912a942094fbd359bbb597.mp4"></audio></div><span class="du">2:44</span></div>
+<div class="tr"><b>03</b><div><span class="nm">Район</span><audio controls="" preload="none" aria-label="Район" src="./assets/573214ef779ff08ee017cfe7d1458ece.mp4"></audio></div><span class="du">3:13</span></div>
+<div class="tr"><b>04</b><div><span class="nm">Облака</span><audio controls="" preload="none" aria-label="Облака" src="./assets/036b2eeb9eac27a300969d52a967098b.mp4"></audio></div><span class="du">2:56</span></div>
+<div class="tr"><b>05</b><div><span class="nm">Со мной бог</span><audio controls="" preload="none" aria-label="Со мной бог" src="./assets/4189c99a7efbcbd474c1ee15b2a03ce8.mp4"></audio></div><span class="du">2:49</span></div>
+<div class="tr"><b>06</b><div><span class="nm">Колеса</span><audio controls="" preload="none" aria-label="Колеса" src="./assets/664275fee883caf91d20eacdf4f0f368.mp4"></audio></div><span class="du">3:17</span></div>
+<div class="tr"><b>07</b><div><span class="nm">ATOMGRAD</span><audio controls="" preload="none" aria-label="ATOMGRAD" src="./assets/69f94452b0cfb560c43cf2c277c419d9.mp4"></audio></div><span class="du">2:26</span></div>
+</div>
+</div>
+</section>
+<section id="frames" style="padding:12px 0 40px">
+<h2 class="st" style="margin:0 0 24px;font-size:44px;letter-spacing:.04em;color:#e8e3d8">Кадры</h2>
+<div class="tw" style="transform:rotate(-1.5deg)"><div class="torn" style="aspect-ratio:3/4"><img src="./assets/8dc09b07949cc11cfd82c7949f8b0bf6.jpg" alt="Чёрно-белое фото: человек у мокрой скалы"></div></div>
+<div class="tw" style="transform:rotate(1.2deg);margin-top:36px"><div class="torn" style="aspect-ratio:4/3"><img src="./assets/6f6b555f038220d69529fc37a50610b2.jpg" alt="Молнии над штормовым морем" style="object-position:50% 8%"></div></div>
+</section>
+<section id="map" style="padding:12px 0 48px;position:relative">
+<h2 class="st" style="margin:0 0 8px;font-size:44px;letter-spacing:.04em;color:#e8e3d8">Карта</h2>
+<p style="margin:0 0 20px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#c4bfb3">Юг России / Голубая бездна</p>
+<div class="pl" style="padding:18px"><i class="rv" style="top:6px;left:6px"></i><i class="rv" style="top:6px;right:6px"></i><i class="rv" style="bottom:6px;left:6px"></i><i class="rv" style="bottom:6px;right:6px"></i>
+<div class="tw"><div class="torn" style="padding:0;background:#a39574">
+<svg role="img" aria-label="Карта юга России в стиле пиратской: Чёрное, Азовское и Каспийское моря, горы Кавказа, череп и красный крест сокровищ" viewBox="150 110 450 360" style="display:block;width:100%;height:auto">
+<defs><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="4"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="9"></feDisplacementMap></filter><pattern id="h" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" stroke="#1d1c18" stroke-width="1"></path></pattern>
+<g id="seas"><path d="M0 250C50 235 90 262 140 248C190 236 215 262 250 285C300 320 350 340 395 390C420 420 440 460 450 500L0 500Z"></path><path d="M170 150C200 120 260 125 285 150C300 175 275 205 245 215C215 225 190 215 175 190Z"></path><path d="M690 130C735 140 770 190 765 260C760 330 735 380 745 430L800 460L800 100L720 100Z"></path></g></defs>
+<rect width="800" height="500" fill="#a39574"></rect>
+<circle cx="560" cy="120" r="90" fill="#4a3a22" opacity=".14"></circle><circle cx="120" cy="60" r="70" fill="#4a3a22" opacity=".12"></circle><circle cx="420" cy="260" r="60" fill="#2b2210" opacity=".1"></circle>
+<g filter="url(#rough)"><use href="#seas" fill="#474640"></use><use href="#seas" fill="url(#h)"></use><path d="M245 212L255 284" stroke="#474640" stroke-width="14"></path></g>
+<g fill="none" stroke="#2b2a24" stroke-width="3" stroke-linecap="round"><path d="M300 -5C310 40 280 90 262 128"></path><path d="M470 420C430 360 360 300 300 215"></path><path d="M600 -5C640 40 650 90 700 130"></path><path d="M440 470l11-20 11 20M470 462l11-20 11 20M500 454l11-20 11 20M530 446l11-20 11 20M560 438l11-20 11 20M590 430l11-20 11 20M620 422l11-20 11 20M650 414l11-20 11 20"></path></g>
+<path d="M60 420C150 390 240 350 352 338C375 332 385 328 392 322" fill="none" stroke="#1b1a16" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"></path>
+<g font-family="'Ruslan Display',serif" fill="#1b1a16" font-size="28"><text x="165" y="455" fill="#d8cfb8" font-size="22">Чёрное море</text><text x="165" y="170" fill="#d8cfb8" font-size="21">Азовское</text><text x="715" y="320" fill="#d8cfb8" font-size="25" transform="rotate(-80 715 320)">Каспий</text><text x="470" y="395" font-size="24" transform="rotate(-12 470 395)">Кавказ</text><text x="310" y="60" font-size="21">р. Дон</text><text x="610" y="70" font-size="21">р. Волга</text><text x="365" y="285" font-size="21" transform="rotate(35 365 285)">р. Кубань</text><text x="405" y="296" font-size="25">Голубая бездна</text><circle cx="352" cy="338" r="5"></circle><text x="262" y="356" fill="#d8cfb8" font-size="22">Геленджик</text></g>
+<g transform="translate(330 425) scale(1.6)"><path d="M-22-14L22 14M22-14L-22 14" stroke="#d8cfb8" stroke-width="5" stroke-linecap="round"></path><path d="M-15 6C-22-20 22-20 15 6L9 11L9 19L-9 19L-9 11Z" fill="#d8cfb8"></path><circle cx="-6" cy="-3" r="4" fill="#141414"></circle><circle cx="6" cy="-3" r="4" fill="#141414"></circle><path d="M0 4l-2 4h4zM-4 12v7M0 12v7M4 12v7" stroke="#141414" stroke-width="1.5" fill="#141414"></path></g>
+<path d="M385 303L415 333M415 303L385 333" stroke="#a32a22" stroke-width="7" stroke-linecap="round"></path>
+<g fill="#1b1a16"><circle cx="640" cy="400" r="30" fill="none" stroke="#1b1a16" stroke-width="2"></circle><path d="M640 360L646 394L680 400L646 406L640 440L634 406L600 400L634 394Z"></path><text x="634" y="352" font-family="'Ruslan Display',serif" font-size="22">С</text></g>
+</svg>
+</div></div></div>
+</section>
+<section id="listen" style="position:relative;padding:36px 0 56px;border-top:3px double #3a3a3a">
+<span class="st" style="display:block;font-size:40px;letter-spacing:.05em;color:#e8e3d8;margin-bottom:20px">Слушать громко</span>
+<div style="display:flex;flex-direction:column;gap:14px">
+<a class="bt" href="https://t.me/generationsaund" target="_blank" rel="noopener" style="background:#8f4c3b;color:#e9e4da">Платформа: Telegram</a>
+<a class="bt" href="https://www.instagram.com/romanov.official_" target="_blank" rel="noopener" style="border:2px solid #a8a49b">Instagram</a>
+</div>
+<span class="tag" style="font-size:64px;right:0;bottom:-6px;transform:rotate(-5deg)">QETUO</span>
+</section>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":4400}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
